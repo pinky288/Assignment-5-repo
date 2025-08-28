@@ -17,13 +17,11 @@ getElement("card-box").addEventListener("click", function(e) {
 
 const cardBox = document.getElementById("card-box");
 const coinCountEl = document.getElementById("coin-count");
+const copyCountEl = document.getElementById("copy-count");
 const historyList = document.getElementById("historyList");
 const clearHistoryBtn = document.getElementById("clearHistory");
 
 let coins = 100;
-
-// copy 
-const copyCountEl = document.getElementById("copy-count");
 let copyCount = 0;
 
 // Copy + Call button
@@ -63,4 +61,10 @@ cardBox.addEventListener("click", function(e) {
     li.innerHTML = `<strong>${name}</strong> - ${number}`;
     historyList.prepend(li);
   }
+});
+
+
+//call history
+clearHistoryBtn.addEventListener("click", function() {
+  historyList.innerHTML = "";
 });
