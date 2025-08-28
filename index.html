@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-green-50">
+  <!--Header section-->
     <header class="logo flex justify-between items-center px-15 py-6 bg-white">
         <div class="flex items-center gap-2">
             <img class="w-8 h-8" src="./assets/logo.png" alt="logo" >
@@ -21,11 +22,11 @@
 
         <div>
             <ul class="flex items-center gap-6 font-semibold">
-      <li class="flex items-center gap-1 rounded-full bg bg-[#def4e3] px-3 w-17 p-2">
-        <span id="heart-count" class="text-xl font-semibold">0</span>
-        <img class="w-5 h-5" src="./assets/heart.png" alt="">
-      </li>
-      <li class="flex items-center gap-1 rounded-full bg bg-[#def4e3] px-3 w-17 p-2">
+              <li class="flex items-center gap-1 rounded-full bg bg-[#def4e3] px-3 w-17 p-2">
+              <span id="heart-count" class="text-xl font-semibold">0</span>
+              <img class="w-5 h-5" src="./assets/heart.png" alt="">
+             </li>
+              <li class="flex items-center gap-1 rounded-full bg bg-[#def4e3] px-3 w-17 p-2">
          <span id="coin-count">100</span>
          <img class="w-5 h-5" src="./assets/coin.png" alt="">
       </li>
@@ -37,6 +38,7 @@
         </div>
     </header>
     <main>
+      <!--Banner-->
     <section id="banner" class="w-full px-12 text-center py-10 bg-gradient-to-r from-[#013223] via-[#005339] via-[#006747] 
     to-[#013223]  text-white">
     <div class="text-4xl mb-2">
@@ -45,30 +47,33 @@
     <p class="opacity-90 mt-2 text-sm">Government Emergency Services at Your Fingertips — A project by the Government of Bangladesh</p>
   </div>
 </section>
-
+<!--card-->
 <section id="card-container" class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-8">
   <section id="card-box" class="col-span-9 grid grid-cols-3 gap-5 ">
+    <!--card1-->
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
         <i class="fa-regular fa-heart heart-btn text-gray-500 text-2xl cursor-pointer mb-2"></i>
-      </div>
-      <div class="flex flex-col gap-4">
-        <img class="w-12 h-12" src="./assets/emergency.png" alt="Emergency" />
-        <h3 class="text-base font-semibold text-black">National Emergency Number</h3>
-        <p class="text-sm text-gray-500">National Emergency</p>
-        <p class="text-2xl font-bold text-black mt-2">999</p>
-      <p class="text-sm px-5 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">All</p>
-
-      </div>
+         </div>
+           <div class="flex flex-col gap-4">
+           <img class="w-12 h-12" src="./assets/emergency.png" alt="Emergency" />
+           <h3 class="text-base font-semibold text-black">National Emergency Number</h3>
+           <p class="text-sm text-gray-500">National Emergency</p>
+           <p class="text-2xl font-bold text-black mt-2">999</p>
+           <p class="text-sm px-5 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">All</p>
+         </div>
       <div class="flex gap-2 mt-4">
         <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
-    <i class="fa-regular fa-copy"></i> Copy
-  </button>
-        <button onclick="alert('Calling National Emergency Service 999...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
-    <i class="fa-solid fa-phone"></i> Call
-  </button>
+        <i class="fa-regular fa-copy"></i> Copy
+        </button>
+        <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+        <i class="fa-solid fa-phone"></i> Call
+       </button>
 </div>
     </div>
+
+        <!--card2-->
+
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
         <i class="fa-regular fa-heart heart-btn text-gray-500 text-2xl cursor-pointer mb-2"></i>
@@ -79,17 +84,19 @@
         <p class="text-sm text-gray-500">Police</p>
         <p class="text-2xl font-bold text-black mt-2">999</p>
       <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Police</p>
-
       </div>
       <div class="flex gap-2 mt-4">
         <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
-        <button onclick="alert('Calling Police Helpline Service 999...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+        <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
     <i class="fa-solid fa-phone"></i> Call
   </button>
 </div>
    </div>
+
+       <!--card3-->
+
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
         <i class="fa-regular fa-heart heart-btn text-gray-500 text-2xl cursor-pointer mb-2"></i>
@@ -100,17 +107,18 @@
         <p class="text-sm text-gray-500">Fire Service</p>
         <p class="text-2xl font-bold text-black mt-2">999</p>
       <p class="text-sm px-5 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Fire</p>
-
       </div>
       <div class="flex gap-2 mt-4">
         <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
-        <button onclick="alert('Calling Fire Service 999...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+        <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
     <i class="fa-solid fa-phone"></i> Call
   </button>
 </div>
     </div>
+
+        <!--card4-->
 
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
@@ -122,18 +130,18 @@
         <p class="text-sm text-gray-500">Ambulance</p>
         <p class="text-2xl font-bold text-black mt-2">1994-999999</p>
         <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Health</p>
-
       </div>
       <div class="flex gap-2 mt-4">
         <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
-        <button onclick="alert('Calling Ambulance Service 1994-999999...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+        <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
     <i class="fa-solid fa-phone"></i> Call
   </button>
 </div>
     </div>
 
+    <!--card5-->
 
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
@@ -145,17 +153,18 @@
         <p class="text-sm text-gray-500">Women & Child Helpline</p>
         <p class="text-2xl font-bold text-black mt-2">109</p>
         <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Help</p>
-
       </div>
       <div class="flex gap-2 mt-4">
         <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
-        <button onclick="alert('Calling Women & Child Helpline 109...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+        <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
     <i class="fa-solid fa-phone"></i> Call
   </button>
 </div>
     </div>
+  
+        <!--card6-->
 
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
@@ -167,17 +176,19 @@
         <p class="text-sm text-gray-500">Anti-Corruption</p>
         <p class="text-2xl font-bold text-black mt-2">106</p>
         <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Govt.</p>
-
       </div>
       <div class="flex gap-2 mt-4">
         <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
-        <button onclick="alert('Calling Anti-Corruption Service 109...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+        <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
     <i class="fa-solid fa-phone"></i> Call
   </button>
 </div>
     </div>
+  
+
+        <!--card7-->
 
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
@@ -189,17 +200,19 @@
         <p class="text-sm text-gray-500">Electricity Outage</p>
         <p class="text-2xl font-bold text-black mt-2">16216</p>
         <p class="text-sm px-3 w-20 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Electricity</p>
-
       </div>
       <div class="flex gap-2 mt-4">
         <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
-        <button onclick="alert('Calling Electricity Outage Service 16216...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+        <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
     <i class="fa-solid fa-phone"></i> Call
   </button>
 </div>
     </div>
+
+        <!--card8-->
+
 
     <div class="bg-white shadow-sm rounded-md p-4  relative">
       <div class="absolute top-4 right-4">
@@ -211,18 +224,19 @@
         <p class="text-sm text-gray-500">Brac</p>
         <p class="text-2xl font-bold text-black mt-2">16445</p>
         <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">NGO</p>
-
-
       </div>
       <div class="flex gap-2 mt-4">
         <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
-        <button onclick="alert('Calling Brac Helpline Service 16445...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+        <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
     <i class="fa-solid fa-phone"></i> Call
   </button>
 </div>
     </div>
+
+        <!--card9-->
+
     
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
@@ -241,7 +255,7 @@
         <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
-        <button onclick="alert('Calling Bangladesh Railway Service 163...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+        <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
     <i class="fa-solid fa-phone"></i> Call
   </button>
 </div>
@@ -260,7 +274,6 @@
       </button>
     </div>
     <ul id="historyList" class="space-y-2 text-sm">
-      
     </ul>
   </section>
 </aside>
