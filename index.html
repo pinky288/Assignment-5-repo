@@ -22,16 +22,17 @@
         <div>
             <ul class="flex items-center gap-6 font-semibold">
       <li class="flex items-center gap-1 rounded-full bg bg-[#def4e3] px-3 w-17 p-2">
-        <span id="heartCount">0</span>
+        <span id="heart-count" class="text-xl font-semibold">0</span>
         <img class="w-5 h-5" src="./assets/heart.png" alt="">
       </li>
       <li class="flex items-center gap-1 rounded-full bg bg-[#def4e3] px-3 w-17 p-2">
-         <span id="coinCount">100</span>
+         <span id="coin-count">100</span>
          <img class="w-5 h-5" src="./assets/coin.png" alt="">
       </li>
-      <li class="flex items-center gap-1 text-white rounded-full bg bg-[#00A63E] px-3 w-17 p-2">
-         <span id="copyCount">Copy</span>
-      </li>
+      <li class="flex justify-center items-center gap-1 text-white rounded-full bg bg-[#00A63E] px-5 h-10">
+   <h3 class="text-sm font-semibold"><span id="copy-count">0</span> Copy</h3>
+</li>
+      
     </ul>
         </div>
     </header>
@@ -49,164 +50,201 @@
   <section id="card-box" class="col-span-9 grid grid-cols-3 gap-5 ">
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
-        <i class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"></i>
+        <i class="fa-regular fa-heart heart-btn text-gray-500 text-2xl cursor-pointer mb-2"></i>
       </div>
       <div class="flex flex-col gap-4">
         <img class="w-12 h-12" src="./assets/emergency.png" alt="Emergency" />
         <h3 class="text-base font-semibold text-black">National Emergency Number</h3>
         <p class="text-sm text-gray-500">National Emergency</p>
         <p class="text-2xl font-bold text-black mt-2">999</p>
-        <span class="mt-1 inline-block w-15 text-sm px-5 py-3 bg-gray-100 text-gray-600 rounded-full">All</span>
+      <p class="text-sm px-5 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">All</p>
 
       </div>
       <div class="flex gap-2 mt-4">
-        <button onclick="navigator.clipboard.writeText('999')" class="w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200"><i class="fa-regular fa-copy"></i> Copy</button>
-        <a href="tel:999" class="w-1/2 py-2 bg-green-500 text-sm text-white rounded-md text-center hover:bg-green-600"><i class="fa-solid fa-phone"></i> Call</a>
-      </div>
+        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+    <i class="fa-regular fa-copy"></i> Copy
+  </button>
+        <button onclick="alert('Calling National Emergency Service 999...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+    <i class="fa-solid fa-phone"></i> Call
+  </button>
+</div>
     </div>
-    <div class="bg-white shadow-sm rounded-md p-4  relative">
+    <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
-        <i class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"></i>
+        <i class="fa-regular fa-heart heart-btn text-gray-500 text-2xl cursor-pointer mb-2"></i>
       </div>
-      <div class="flex flex-col gap-3">
+      <div class="flex flex-col gap-4">
         <img class="w-12 h-12" src="./assets/police.png" alt="Emergency" />
         <h3 class="text-base font-semibold text-black">Police Helpline Number</h3>
         <p class="text-sm text-gray-500">Police</p>
         <p class="text-2xl font-bold text-black mt-2">999</p>
-        <span class="mt-1 inline-block w-15 text-sm px-5 py-3 bg-gray-100 text-gray-600 rounded-full">All</span>
+      <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Police</p>
 
       </div>
       <div class="flex gap-2 mt-4">
-        <button onclick="navigator.clipboard.writeText('999')" class="w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200"><i class="fa-regular fa-copy"></i> Copy</button>
-        <a href="tel:999" class="w-1/2 py-2 bg-green-500 text-sm text-white rounded-md text-center hover:bg-green-600"><i class="fa-solid fa-phone"></i> Call</a>
-      </div>
-    </div>
+        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+    <i class="fa-regular fa-copy"></i> Copy
+  </button>
+        <button onclick="alert('Calling Police Helpline Service 999...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+    <i class="fa-solid fa-phone"></i> Call
+  </button>
+</div>
+   </div>
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
-        <i class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"></i>
+        <i class="fa-regular fa-heart heart-btn text-gray-500 text-2xl cursor-pointer mb-2"></i>
       </div>
-      <div class="flex flex-col gap-3">
+      <div class="flex flex-col gap-4">
         <img class="w-12 h-12" src="./assets/fire-service.png" alt="Emergency" />
         <h3 class="text-base font-semibold text-black">Fire Service Number</h3>
         <p class="text-sm text-gray-500">Fire Service</p>
         <p class="text-2xl font-bold text-black mt-2">999</p>
-        <span class="mt-1 inline-block w-15 text-sm px-5 py-3 bg-gray-100 text-gray-600 rounded-full">All</span>
+      <p class="text-sm px-5 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Fire</p>
 
       </div>
       <div class="flex gap-2 mt-4">
-        <button onclick="navigator.clipboard.writeText('999')" class="w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200"><i class="fa-regular fa-copy"></i> Copy</button>
-        <a href="tel:999" class="w-1/2 py-2 bg-green-500 text-sm text-white rounded-md text-center hover:bg-green-600"><i class="fa-solid fa-phone"></i> Call</a>
-      </div>
+        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+    <i class="fa-regular fa-copy"></i> Copy
+  </button>
+        <button onclick="alert('Calling Fire Service 999...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+    <i class="fa-solid fa-phone"></i> Call
+  </button>
+</div>
     </div>
 
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
-        <i class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"></i>
+        <i class="fa-regular fa-heart heart-btn text-gray-500 text-2xl cursor-pointer mb-2"></i>
       </div>
       <div class="flex flex-col gap-3">
         <img class="w-12 h-12" src="./assets/ambulance.png" alt="Emergency" />
         <h3 class="text-base font-semibold text-black">Ambulance Service</h3>
         <p class="text-sm text-gray-500">Ambulance</p>
-        <p class="text-2xl font-bold text-black mt-2">999</p>
-        <span class="mt-1 inline-block w-15 text-sm px-5 py-3 bg-gray-100 text-gray-600 rounded-full">All</span>
+        <p class="text-2xl font-bold text-black mt-2">1994-999999</p>
+        <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Health</p>
 
       </div>
       <div class="flex gap-2 mt-4">
-        <button onclick="navigator.clipboard.writeText('999')" class="w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200"><i class="fa-regular fa-copy"></i> Copy</button>
-        <a href="tel:999" class="w-1/2 py-2 bg-green-500 text-sm text-white rounded-md text-center hover:bg-green-600"><i class="fa-solid fa-phone"></i> Call</a>
-      </div>
+        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+    <i class="fa-regular fa-copy"></i> Copy
+  </button>
+        <button onclick="alert('Calling Ambulance Service 1994-999999...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+    <i class="fa-solid fa-phone"></i> Call
+  </button>
+</div>
     </div>
 
 
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
-        <i class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"></i>
+        <i class="fa-regular fa-heart heart-btn text-gray-500 text-2xl cursor-pointer mb-2"></i>
       </div>
       <div class="flex flex-col gap-3">
         <img class="w-12 h-12" src="./assets/emergency.png" alt="Emergency" />
         <h3 class="text-base font-semibold text-black">Women & Child Helpline</h3>
         <p class="text-sm text-gray-500">Women & Child Helpline</p>
-        <p class="text-2xl font-bold text-black mt-2">999</p>
-        <span class="mt-1 inline-block w-15 text-sm px-5 py-3 bg-gray-100 text-gray-600 rounded-full">All</span>
+        <p class="text-2xl font-bold text-black mt-2">109</p>
+        <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Help</p>
 
       </div>
       <div class="flex gap-2 mt-4">
-        <button onclick="navigator.clipboard.writeText('999')" class="w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200"><i class="fa-regular fa-copy"></i> Copy</button>
-        <a href="tel:999" class="w-1/2 py-2 bg-green-500 text-sm text-white rounded-md text-center hover:bg-green-600"><i class="fa-solid fa-phone"></i> Call</a>
-      </div>
+        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+    <i class="fa-regular fa-copy"></i> Copy
+  </button>
+        <button onclick="alert('Calling Women & Child Helpline 109...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+    <i class="fa-solid fa-phone"></i> Call
+  </button>
+</div>
     </div>
 
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
-        <i class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"></i>
+        <i class="fa-regular fa-heart heart-btn text-gray-500 text-2xl cursor-pointer mb-2"></i>
       </div>
       <div class="flex flex-col gap-3">
         <img class="w-12 h-12" src="./assets/emergency.png" alt="Emergency" />
         <h3 class="text-base font-semibold text-black">Anti-Corruption Helpline</h3>
         <p class="text-sm text-gray-500">Anti-Corruption</p>
-        <p class="text-2xl font-bold text-black mt-2">999</p>
-        <span class="mt-1 inline-block w-15 text-sm px-5 py-3 bg-gray-100 text-gray-600 rounded-full">All</span>
+        <p class="text-2xl font-bold text-black mt-2">106</p>
+        <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Govt.</p>
 
       </div>
       <div class="flex gap-2 mt-4">
-        <button onclick="navigator.clipboard.writeText('999')" class="w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200"><i class="fa-regular fa-copy"></i> Copy</button>
-        <a href="tel:999" class="w-1/2 py-2 bg-green-500 text-sm text-white rounded-md text-center hover:bg-green-600"><i class="fa-solid fa-phone"></i> Call</a>
-      </div>
+        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+    <i class="fa-regular fa-copy"></i> Copy
+  </button>
+        <button onclick="alert('Calling Anti-Corruption Service 109...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+    <i class="fa-solid fa-phone"></i> Call
+  </button>
+</div>
     </div>
 
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
-        <i class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"></i>
+        <i class="fa-regular fa-heart heart-btn text-gray-500 text-2xl cursor-pointer mb-2"></i>
       </div>
       <div class="flex flex-col gap-3">
         <img class="w-12 h-12" src="./assets/emergency.png" alt="Emergency" />
         <h3 class="text-base font-semibold text-black">Electricity Outage</h3>
         <p class="text-sm text-gray-500">Electricity Outage</p>
-        <p class="text-2xl font-bold text-black mt-2">999</p>
-        <span class="mt-1 inline-block w-15 text-sm px-5 py-3 bg-gray-100 text-gray-600 rounded-full">All</span>
+        <p class="text-2xl font-bold text-black mt-2">16216</p>
+        <p class="text-sm px-3 w-20 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Electricity</p>
 
       </div>
       <div class="flex gap-2 mt-4">
-        <button onclick="navigator.clipboard.writeText('999')" class="w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200"><i class="fa-regular fa-copy"></i> Copy</button>
-        <a href="tel:999" class="w-1/2 py-2 bg-green-500 text-sm text-white rounded-md text-center hover:bg-green-600"><i class="fa-solid fa-phone"></i> Call</a>
-      </div>
+        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+    <i class="fa-regular fa-copy"></i> Copy
+  </button>
+        <button onclick="alert('Calling Electricity Outage Service 16216...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+    <i class="fa-solid fa-phone"></i> Call
+  </button>
+</div>
     </div>
 
     <div class="bg-white shadow-sm rounded-md p-4  relative">
       <div class="absolute top-4 right-4">
-        <i class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"></i>
+        <i class="fa-regular fa-heart heart-btn text-gray-500 text-2xl cursor-pointer mb-2"></i>
       </div>
       <div class="flex flex-col gap-3">
         <img class="w-12 h-12" src="./assets/brac.png" alt="Emergency" />
         <h3 class="text-base font-semibold text-black">Brac Helpline</h3>
         <p class="text-sm text-gray-500">Brac</p>
-        <p class="text-2xl font-bold text-black mt-2">999</p>
-        <span class="mt-1 inline-block w-15 text-sm px-5 py-3 bg-gray-100 text-gray-600 rounded-full">All</span>
+        <p class="text-2xl font-bold text-black mt-2">16445</p>
+        <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">NGO</p>
+
 
       </div>
       <div class="flex gap-2 mt-4">
-        <button onclick="navigator.clipboard.writeText('999')" class="w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200"><i class="fa-regular fa-copy"></i> Copy</button>
-        <a href="tel:999" class="w-1/2 py-2 bg-green-500 text-sm text-white rounded-md text-center hover:bg-green-600"><i class="fa-solid fa-phone"></i> Call</a>
-      </div>
+        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+    <i class="fa-regular fa-copy"></i> Copy
+  </button>
+        <button onclick="alert('Calling Brac Helpline Service 16445...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+    <i class="fa-solid fa-phone"></i> Call
+  </button>
+</div>
     </div>
-
-
+    
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
-        <i class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"></i>
+        <i class="fa-regular fa-heart heart-btn text-gray-500 text-2xl cursor-pointer mb-2"></i>
       </div>
       <div class="flex flex-col gap-3">
         <img class="w-12 h-12" src="./assets/Bangladesh-Railway.png" alt="Emergency" />
         <h3 class="text-base font-semibold text-black">Bangladesh Railway Helpline </h3>
         <p class="text-sm text-gray-500">Bangladesh Railway</p>
-        <p class="text-2xl font-bold text-black mt-2">999</p>
-        <span class="mt-1 inline-block w-15 text-sm px-5 py-3 bg-gray-100 text-gray-600 rounded-full">All</span>
+        <p class="text-2xl font-bold text-black mt-2">163</p>
+        <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Travel</p>
+
 
       </div>
       <div class="flex gap-2 mt-4">
-        <button onclick="navigator.clipboard.writeText('999')" class="w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200"><i class="fa-regular fa-copy"></i> Copy</button>
-        <a href="tel:999" class="w-1/2 py-2 bg-green-500 text-sm text-white rounded-md text-center hover:bg-green-600"><i class="fa-solid fa-phone"></i> Call</a>
-      </div>
+        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+    <i class="fa-regular fa-copy"></i> Copy
+  </button>
+        <button onclick="alert('Calling Bangladesh Railway Service 163...')" class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
+    <i class="fa-solid fa-phone"></i> Call
+  </button>
+</div>
     </div>
 
     
@@ -228,6 +266,6 @@
 </aside>
 </main>
 
-    <script src="./index.js"></script>
+    <script src="./script/index.js"></script>
 </body>
 </html>
