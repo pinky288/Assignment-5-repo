@@ -8,13 +8,13 @@
 <!--Daisy cdn-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <!--tailwind-->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-green-50">
   <!--Header section-->
-    <header class="logo flex justify-between items-center px-15 py-6 bg-white">
+    <header class="flex flex-col md:flex-row justify-between items-center px-4 py-4 bg-white">
         <div class="flex items-center gap-2">
             <img class="w-8 h-8" src="./assets/logo.png" alt="logo" >
             <h1 class="text-sm font-bold text-[#006747]">Emergency<br>Service</h1>
@@ -49,7 +49,7 @@
 </section>
 <!--card-->
 <section id="card-container" class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-8">
-  <section id="card-box" class="col-span-9 grid grid-cols-3 gap-5 ">
+  <section id="card-box" class="col-span-12 md:col-span-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
     <!--card1-->
     <div class="bg-white shadow-sm rounded-md p-4 relative">
       <div class="absolute top-4 right-4">
@@ -60,10 +60,10 @@
            <h3 class="text-base font-semibold text-black">National Emergency Number</h3>
            <p class="text-sm text-gray-500">National Emergency</p>
            <p class="text-2xl font-bold text-black mt-2">999</p>
-           <p class="text-sm px-5 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">All</p>
+           <p class="w-20 px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-center">All</p>
          </div>
       <div class="flex gap-2 mt-4">
-        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+        <button class="copy-btn w-full sm:w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
         <i class="fa-regular fa-copy"></i> Copy
         </button>
         <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
@@ -83,10 +83,10 @@
         <h3 class="text-base font-semibold text-black">Police Helpline Number</h3>
         <p class="text-sm text-gray-500">Police</p>
         <p class="text-2xl font-bold text-black mt-2">999</p>
-      <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Police</p>
+      <p class="w-20 px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-center">Police</p>
       </div>
       <div class="flex gap-2 mt-4">
-        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+        <button class="copy-btn w-full sm:w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
         <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
@@ -106,10 +106,10 @@
         <h3 class="text-base font-semibold text-black">Fire Service Number</h3>
         <p class="text-sm text-gray-500">Fire Service</p>
         <p class="text-2xl font-bold text-black mt-2">999</p>
-      <p class="text-sm px-5 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Fire</p>
+      <p class="w-20 px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-center">Fire</p>
       </div>
       <div class="flex gap-2 mt-4">
-        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+        <button class="copy-btn w-full sm:w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
         <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
@@ -129,10 +129,10 @@
         <h3 class="text-base font-semibold text-black">Ambulance Service</h3>
         <p class="text-sm text-gray-500">Ambulance</p>
         <p class="text-2xl font-bold text-black mt-2">1994-999999</p>
-        <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Health</p>
+        <p class="w-20 px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-center">Health</p>
       </div>
       <div class="flex gap-2 mt-4">
-        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+        <button class="copy-btn w-full sm:w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
         <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
@@ -152,10 +152,10 @@
         <h3 class="text-base font-semibold text-black">Women & Child Helpline</h3>
         <p class="text-sm text-gray-500">Women & Child Helpline</p>
         <p class="text-2xl font-bold text-black mt-2">109</p>
-        <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Help</p>
+        <p class="w-20 px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-center">Help</p>
       </div>
       <div class="flex gap-2 mt-4">
-        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+        <button class="copy-btn w-full sm:w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
         <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
@@ -175,10 +175,10 @@
         <h3 class="text-base font-semibold text-black">Anti-Corruption Helpline</h3>
         <p class="text-sm text-gray-500">Anti-Corruption</p>
         <p class="text-2xl font-bold text-black mt-2">106</p>
-        <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Govt.</p>
+        <p class="w-20 px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-center">Govt.</p>
       </div>
       <div class="flex gap-2 mt-4">
-        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+        <button class="copy-btn w-full sm:w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
         <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
@@ -199,10 +199,10 @@
         <h3 class="text-base font-semibold text-black">Electricity Outage</h3>
         <p class="text-sm text-gray-500">Electricity Outage</p>
         <p class="text-2xl font-bold text-black mt-2">16216</p>
-        <p class="text-sm px-3 w-20 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Electricity</p>
+        <p class="w-20 px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-center">Electricity</p>
       </div>
       <div class="flex gap-2 mt-4">
-        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+        <button class="copy-btn w-full sm:w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
         <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
@@ -223,10 +223,10 @@
         <h3 class="text-base font-semibold text-black">Brac Helpline</h3>
         <p class="text-sm text-gray-500">Brac</p>
         <p class="text-2xl font-bold text-black mt-2">16445</p>
-        <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">NGO</p>
+        <p class="w-20 px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-center">NGO</p>
       </div>
       <div class="flex gap-2 mt-4">
-        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+        <button class="copy-btn w-full sm:w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
         <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
@@ -247,12 +247,12 @@
         <h3 class="text-base font-semibold text-black">Bangladesh Railway Helpline </h3>
         <p class="text-sm text-gray-500">Bangladesh Railway</p>
         <p class="text-2xl font-bold text-black mt-2">163</p>
-        <p class="text-sm px-3 w-15 py-1 bg-gray-100 text-gray-600 rounded-full inline-block">Travel</p>
+        <p class="w-20 px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-center">Travel</p>
 
 
       </div>
       <div class="flex gap-2 mt-4">
-        <button class="copy-btn w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
+        <button class="copy-btn w-full sm:w-1/2 py-2 bg-gray-100 text-sm rounded-md hover:bg-gray-200">
     <i class="fa-regular fa-copy"></i> Copy
   </button>
         <button class="call-btn w-1/2 py-2 bg-green-500 text-sm text-white rounded-md hover:bg-green-600">
@@ -263,7 +263,7 @@
 
     
   </section>    
-  <aside id="history-box" class="bg-white col-span-3">
+  <aside id="history-box" class="bg-white col-span-12 md:col-span-3 mt-6 md:mt-0">
   <section class="col-span-12 md:col-span-3 bg-white shadow p-4 rounded">
     <div class="flex justify-between items-center mb-3">
       <h1 class="text-lg font-semibold flex items-center gap-2">
